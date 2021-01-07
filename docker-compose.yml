@@ -1,0 +1,22 @@
+version: '3'
+services: 
+  emailserver:
+    build: Email-Server/
+    depends_on: 
+      - database
+
+    ports:
+      - '3001:3001'
+
+    command: node app.js
+
+
+  database:
+    image: postgres:latest
+    ports:
+     - '5432:5432'
+  
+    environment: 
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: emails
