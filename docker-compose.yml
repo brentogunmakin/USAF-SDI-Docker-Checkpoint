@@ -13,10 +13,13 @@ services:
 
   database:
     image: postgres:latest
+    restart: always
     ports:
      - '5432:5432'
   
     environment: 
-      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pass
       POSTGRES_DB: emails
+
+    
+    command: "docker run --name postgres -e POSTGRES_PASSWORD=pass -d postgres &&createdb emaildb"

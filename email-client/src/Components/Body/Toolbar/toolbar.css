@@ -1,0 +1,12 @@
+#ToolBar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.icons {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+}
