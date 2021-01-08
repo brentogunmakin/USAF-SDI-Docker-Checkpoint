@@ -10,5 +10,5 @@ RUN yarn install
 
 EXPOSE 3001
 
-
-CMD [ "npx", "knex", "migrate:latest" ]
+#Doesn't work yet
+#CMD [ "knex migrate:latest"]

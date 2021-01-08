@@ -1,0 +1,19 @@
+
+.bannerStyle {
+    background-color: lightslategray;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+
+#Logo {
+    
+    height: 50px;
+    width: 50px;
+}
+#EmailSearchBar {
+   border-radius: 15px;
+    width: 50%;
+}
